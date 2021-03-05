@@ -325,3 +325,17 @@ td {
 .th1 {
   background-color: #adb5bd;
 }
+
+@media (max-width: 1024px) {
+  .Calendar,
+  .weekdays,
+  .days {
+    width: 100%;
+  }
+  .dropdown-section {
+    /* flex-direction: column; */
+  }
+  .dropdown-section .dropdown {
+    width: 50%;
+  }
+}
