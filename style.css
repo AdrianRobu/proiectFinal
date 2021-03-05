@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9ecef;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 50px;
+}
+
+@media (max-width: 1024px) {
+  .titlu-pagina {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .titlu-pagina {
+    width: 100%;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+}
+
+.logo p {
+  position: absolute;
+  margin-top: -60px;
+}
+
+.logo img {
+  float: left;
+  margin: -110px 5px 0px 0px;
+}
+
+@media (max-width: 1024px) {
+  .logo img {
+    width: 10%;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo img {
+    width: 10%;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo p {
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo p {
+    width: 30%;
+  }
+}
+
+.welcome p {
+  display: flex;
+  float: right;
+  margin: -130px 60px 0px 0px;
+}
+
+@media (max-width: 1024px) {
+  .welcome {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome {
+    width: 100%;
+  }
+}
+
+.welcome a:link,
+a:visited {
+  float: right;
+  background-color: #e9ecef;
+  color: black;
+  border: 3px solid grey;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  margin: -130px 0px 0px 0px;
+}
+
+.welcome a:hover,
+a:active {
+  background-color: red;
+  color: white;
+}
+
+.Container {
+  background-color: #dee2e6;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .Container {
+    flex-direction: column;
+  }
+}
+
+.Container > div {
+  max-width: 400px;
+  width: 100%;
+}
+
+.Container h2 {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  background-color: #adb5bd;
+  justify-content: center;
+  height: 30px;
+  border: 3px #adb5bd;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  margin-bottom: 5px;
+}
+
+.daily a:link,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.monthly a:link,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.Calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: auto;
+  width: 15%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.p {
+  color: white;
+  margin-right: 40px;
+}
+
+.Calendar p {
+  color: white;
+}
+
+.n {
+  color: white;
+  margin-left: 40px;
+}
+
+.dropbtn {
+  background-color: #343a40;
+  color: white;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #343a40;
+}
+
+.dropbtn {
+  background-color: #343a40;
+  color: white;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #343a40;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  max-width: 300px;
+  width: 15%;
+  height: 20px;
+  justify-content: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #343a40;
+  z-index: 1;
+  padding-left: 5px;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #343a40;
+  z-index: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.weekdays {
+  display: flex;
+  margin: auto;
+  width: 15%;
+  padding: 10px;
+  background-color: #212529;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 15%;
+  color: #e9ecef;
+  text-align: center;
+}
+
+.days {
+  margin: auto;
+  width: 15%;
+  padding: 10px;
+  background: #495057;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #e9ecef;
+}
+
+.dropdown-section {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-section button {
+  width: 100%;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.checkbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button:hover,
+button:active {
+  background-color: aqua;
+}
+
+.Counter-daily {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.Counter-monthly {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.th1 {
+  background-color: #adb5bd;
+}
